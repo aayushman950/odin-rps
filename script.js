@@ -29,6 +29,7 @@ var computerChoice, win;
 console.log('comp chose ' + getComputerChoice());
 
 playerChoice = prompt('rock, paper or scissors?');
+playerChoice = playerChoice.toLowerCase();
 
 play(playerChoice, computerChoice);
 

@@ -28,10 +28,11 @@ function game(){
         console.log('Round: ' + round);
         console.log('Player Score: ' + playerScore);
         console.log('Computer Score: ' + computerScore);
-        console.log('comp chose ' + getComputerChoice());
-
+        
         playerChoice = prompt('rock, paper or scissors?');
         playerChoice = playerChoice.toLowerCase();
+        
+        console.log('Computer chose ' + getComputerChoice());
 
         play(playerChoice, computerChoice);
     }

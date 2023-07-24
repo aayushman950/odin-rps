@@ -9,7 +9,6 @@ function getComputerChoice(){
 }
 
 function play(playerSelection, computerSelection) {
-
     if ((playerSelection=='rock' && computerSelection=='scissors') || 
         (playerSelection=='paper' && computerSelection=='rock') || 
         (playerSelection=='scissors' && computerSelection=='paper')){
@@ -24,8 +23,9 @@ function play(playerSelection, computerSelection) {
 }
 
 function game(){
-    for (var round=1; round<=5; round++) {
-        console.log('Round: ' + round);
+    console.log('First to 5 points wins!')
+
+    while((playerScore<5) && (computerScore<5)) {
         console.log('Player Score: ' + playerScore);
         console.log('Computer Score: ' + computerScore);
         
@@ -35,7 +35,12 @@ function game(){
         console.log('Computer chose ' + getComputerChoice());
 
         play(playerChoice, computerChoice);
+
+        console.log('')
     }
+
+    console.log('Player Score: ' + playerScore);
+    console.log('Computer Score: ' + computerScore);
 }
 
 var computerChoice, win;
@@ -43,6 +48,5 @@ var playerScore=0, computerScore=0;
 
 game();
 
-console.log('Final Score: ')
-console.log('Player: ' + playerScore)
-console.log('Computer: ' + computerScore)
+if (playerScore>computerScore){ console.log('PLAYER WINS!') }
+if (playerScore<computerScore){ console.log('COMPUTER WINS!') }

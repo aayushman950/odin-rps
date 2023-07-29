@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: burlywood;
+}
+
+.rule{
+    display: flex;
+    justify-content: center;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.choice{
+    display: flex;
+    padding: 20px;
+    border-radius: 25%;
+    cursor: pointer;
+}

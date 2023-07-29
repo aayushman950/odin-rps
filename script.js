@@ -61,11 +61,11 @@ function handleClick(playerChoice) {
 
 function updateScore() {
     if (roundWinner === 'draw') {
-        scoreInfo.textContent = "It's a draw!"
+        scoreInfo.textContent = `Computer chose ${computerChoice}. It's a draw!`
     } else if (roundWinner === 'player') {
-        scoreInfo.textContent = 'You won!'
+        scoreInfo.textContent = `Computer chose ${computerChoice}. You won!`
     } else if (roundWinner === 'computer') {
-        scoreInfo.textContent = 'You lost!'
+        scoreInfo.textContent = `Computer chose ${computerChoice}. You lost...`
     }
 
     playerScorePara.textContent = `Player: ${playerScore}`
